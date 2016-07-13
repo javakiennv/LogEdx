@@ -12,7 +12,7 @@ public class ListFiles {
 		ArrayList<String> listfiles = new ArrayList<String>();
 		for (File fileEntry : folder.listFiles()) {
 			if (fileEntry.isDirectory()) {
-				System.out.println("Folder");
+				System.out.println("Folder: Không tìm thấy file trong folder.");
 			} else {
 				String patFile = pathFolder + "/" + fileEntry.getName();
 				listfiles.add(patFile);

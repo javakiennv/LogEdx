@@ -11,6 +11,7 @@ public class WriteToFile {
 		// TODO Auto-generated constructor stub
 		try {
 			out = new FileOutputStream("C:\\Users\\Ministorm\\Desktop\\output.csv");
+			
 			ParrserJsonCreateArrRecode arrRecode = new ParrserJsonCreateArrRecode();
 			ArrayList<Recode> list = arrRecode.create();
 			for (Recode recode : list) {
